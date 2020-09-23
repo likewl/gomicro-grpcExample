@@ -1,0 +1,7 @@
+syntax ="proto3";
+package Services;
+
+message Test{
+  int64 Test1=1;
+  string Test2=2;
+}

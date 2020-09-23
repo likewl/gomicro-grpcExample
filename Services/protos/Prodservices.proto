@@ -1,0 +1,13 @@
+syntax ="proto3";
+import "models.proto"; //导入定义
+package Services;
+
+message Req{
+  int64 size=1;
+}
+message Rsp{
+  repeated Test data=1;
+}
+service ProdService{
+  rpc getProd(Req) returns(Rsp);
+}
